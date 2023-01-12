@@ -1,5 +1,10 @@
 function Main(props) {
-    return <h1>Main</h1>;
+    return (
+        <main>
+            <h1>Main Contents</h1>
+        </main>
+    )
+    
   }
   
   export default Main;
