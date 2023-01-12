@@ -1,5 +1,102 @@
-function Index(props) {
-    return <h1>Index</h1>;
-  }
-  
-  export default Index;
+import { useState } from "react";
+
+function Add(props) {
+  const [newForm, setNewForm] = useState({
+    topic: "",
+    icon: "",
+    image: "",
+    titleOne: "",
+    urlOne: "",
+    titleTwo: "",
+    urlTwo: "",
+    titleThree: "",
+    urlThree: "",
+  });
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.createTopics(newForm);
+    setNewForm({
+      topic: "",
+      icon: "",
+      image: "",
+      titleOne: "",
+      urlOne: "",
+      titleTwo: "",
+      urlTwo: "",
+      titleThree: "",
+      urlThree: "",
+    });
+  };
+  return (
+    <section>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={newForm.topic}
+          name="topic"
+          placeholder="topic"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.icon}
+          name="icon"
+          placeholder="icon"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.image}
+          name="image"
+          placeholder="image"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.titleOne}
+          name="titleOne"
+          placeholder="title"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.urlOne}
+          name="urlOne"
+          placeholder="url"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.titleTwo}
+          name="titleTwo"
+          placeholder="title"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.urlTwo}
+          name="urlTwo"
+          placeholder="url"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.titleThree}
+          name="titleThree"
+          placeholder="title"
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          value={newForm.urlThree}
+          name="urlThree"
+          placeholder="url"
+          onChange={handleChange}
+        />
+        <input type="submit" value="Add Topic" />
+      </form>
+    </section>
+  );
+}
+
+export default Add;
