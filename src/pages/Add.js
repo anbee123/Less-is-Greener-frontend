@@ -12,6 +12,14 @@ function Add(props) {
     titleThree: "",
     urlThree: "",
   });
+
+  const handleChange = (event) => {
+    setNewForm((prevState) => ({
+      ...prevState,
+      [event.target.name]: event.target.value,
+    }));
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     props.createTopics(newForm);
