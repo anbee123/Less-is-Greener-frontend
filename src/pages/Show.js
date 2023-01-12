@@ -1,5 +1,24 @@
+import { useParams } from "react-router-dom";
+
+
 function Show(props) {
-    return <h1>This is show page</h1>;
+
+  const { id }= useParams()
+  const topic = props.topics.find((topic) => topic._id === id)
+    return (
+      <div className= "topics">
+        <h1>{topic.topic}</h1>
+        <img src={topic.image} alt={topic.topic} />
+    <h2>{topic.titleOne}</h2>
+   <h2>{topic.urlOne}</h2>
+   <h2>{topic.titleTwo}</h2>
+   <h2>{topic.urlTwo}</h2> 
+   <h2>{topic.titleThree}</h2>
+   <h2>{topic.urlThree}</h2>
+
+      </div>
+    )
+   
   }
   
   export default Show;
