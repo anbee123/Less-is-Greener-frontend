@@ -6,6 +6,8 @@ function Show(props) {
 
   const { id } = useParams()
   const topic = props.topics.find((topic) => topic._id === id)
+
+  console.log(topic.urlOne)
   return (
     <div className="topics">
       <h1>{topic.topic}</h1>
