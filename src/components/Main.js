@@ -70,9 +70,9 @@ function Main(props) {
                 <Route
                     path="/lessisgreener/add" 
                     element = {<Add topics = {topics} createTopics = {createTopics} />}/>
-                {/* <Route
-                    path="/lessisgreener/edit" 
-                    element = {<Add topics = {topics} createTopics = {createTopics} />}/>     */}
+                <Route
+                    path="/lessisgreener/:id/edit" 
+                    element = {<Edit topics = {topics} updateTopics = {updateTopics}/>}/>    
             </Routes>
         </main>
     )
