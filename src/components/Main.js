@@ -62,8 +62,8 @@ function Main(props) {
         <main>
             <Routes>
                 <Route 
-                    exact path="/" 
-                    element={<Index topics = {topics} deleteTopics = {deleteTopics}/>} />
+                    exact path="/lessisgreener" 
+                    element={<Index topics = {topics} />} />
                 <Route 
                     path="/lessisgreener/:id" 
                     element={<Show topics = {topics}/>} />
@@ -72,7 +72,7 @@ function Main(props) {
                     element = {<Add topics = {topics} createTopics = {createTopics} />}/>
                 <Route
                     path="/lessisgreener/:id/edit" 
-                    element = {<Edit topics = {topics} updateTopics = {updateTopics}/>}/>    
+                    element = {<Edit topics = {topics} updateTopics = {updateTopics} deleteTopics = {deleteTopics}/>}/>    
             </Routes>
         </main>
     )

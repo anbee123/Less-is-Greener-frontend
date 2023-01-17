@@ -1,7 +1,10 @@
 function Header(props) {
     return (
     <header>
-        <p>Header</p>
+         <img id = "logo" src="./logo.png "alt="icon"/>
+         <div>
+            
+         </div>
     </header>
     )
   }

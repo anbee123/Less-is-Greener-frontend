@@ -100,7 +100,7 @@ function Add(props) {
           name="urlThree"
           placeholder="url"
           onChange={handleChange}
-        />
+        /><br/>
         <input type="submit" value="Add Topic" />
       </form>
     </section>

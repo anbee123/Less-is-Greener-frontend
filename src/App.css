@@ -1,13 +1,20 @@
+*{
+  background-color: #fefff8;
+}
+
+
+
 .App {
+ background-color: #f4f6e9;
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
 header {
+  background-color:#217461;
   width: 1028px;
   height: 150px;
-  border: 1px solid lightgrey;
   text-align: center;
 }
 
@@ -15,10 +22,25 @@ main {
 
   width: 1028px;
   height: 800px;
-  border: 1px solid lightgrey;
+
   text-align: center;
 }
 
+div > input[type=text], form > input[type=text]{
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: rgb(48, 61, 48);
+}
+
+#logo{
+  width: 300px;
+}
 footer {
   width: 1028px;
   height: 50px;

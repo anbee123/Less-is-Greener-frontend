@@ -6,10 +6,11 @@ function Index(props) {
 
     return props.topics.map((topic) =>(
       <div className="topics" key = {topic._id}>
+        <img id = "icon" src={topic.icon} alt="icon"/>
         <Link to={`/lessisgreener/${topic._id}`}>
-          <h2>{topic.topic}</h2>
+          <p>{topic.topic}</p>
         </Link>
-           <img src={topic.icon} alt="icon"/>
+           
       </div>
     ))
  
@@ -19,6 +20,7 @@ function Index(props) {
   }
   return(
   <div>
+    
     {props.topics ? loaded() : loading()}
   </div>
   )
