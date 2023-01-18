@@ -98,4 +98,13 @@ footer {
   font-size: 10px;
 }
 
+#home-container{
+  margin: 50px;
+  display: flex;
+  gap: 10px;
+
+}
+#intro{
+  width: 400px;
+}
 
