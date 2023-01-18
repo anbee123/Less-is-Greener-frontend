@@ -40,7 +40,7 @@ function Add(props) {
     navigate("/lessisgreener")
   };
   return (
-    <section>
+    <section className= "content-margin">
       <form onSubmit={handleSubmit}>
         <input
           type="text"

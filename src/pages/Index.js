@@ -24,8 +24,8 @@ function Index(props) {
     return <h1>Loading...</h1>
   }
   return(
-  <div id="index-layout">
-    <div id="index-title">
+  <div className="content-margin">
+    <div id="content-title">
         <h3>What are you here for? </h3>
         <p>Click here to have ideas and get inspired</p>
     </div>

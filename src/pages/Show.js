@@ -10,12 +10,15 @@ function Show(props) {
 
 //   console.log(topic.urlOne)
   return (
-    <div className="list">
-      <h1>{topic.topic}</h1>
-      <img src={topic.image} alt={topic.topic} /><br/>
-      <a href = {topic.urlOne} target = "_blank">{topic.titleOne}</a><br/>
-      <a href = {topic.urlTwo} target = "_blank">{topic.titleTwo}</a><br/>
-      <a href = {topic.urlThree} target = "_blank">{topic.titleThree}</a><br/>
+    <div className="content-margin">
+      <h2>{topic.topic}</h2>
+      <img id = "image" src={topic.image} alt={topic.topic} /><br/>
+      <div id="list">
+        <a href = {topic.urlOne} target = "_blank" rel="noreferrer">{topic.titleOne}</a><br/>
+        <a href = {topic.urlTwo} target = "_blank" rel="noreferrer">{topic.titleTwo}</a><br/>
+        <a href = {topic.urlThree} target = "_blank" rel="noreferrer">{topic.titleThree}</a><br/>
+      </div>
+      
      
       <Link to={`/lessisgreener/${topic._id}/edit`}>edit</Link>
 

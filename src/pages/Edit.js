@@ -29,7 +29,7 @@ function Edit(props) {
         navigate("/lessisgreener")
     }
     return(
-        <section>
+        <section className="content-layout">
             
           <form onSubmit={handleSubmit}>
             <div>

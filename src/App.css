@@ -33,10 +33,9 @@ nav, nav>a, nav>a:link, nav>a:visited{
 }
 
 main {
-
   width: 1028px;
-  height: 800px;
-
+  height: 1000px;
+  background-color: #fefff8;
   text-align: center;
 }
 
@@ -44,6 +43,8 @@ div > input[type=text], form > input[type=text]{
   padding: 10px;
   margin: 10px;
   width: 500px;
+  border: 1px solid #217461;
+  border-radius: 5px;
 
 }
 
@@ -73,18 +74,28 @@ a:link, a:visited{
 #icon>img{
   width: 140px;
 }
+#image{
+  margin: 30px;
+}
 #logo{
   width: 300px;
   margin: 10px;
 }
-#index-layout{
+.content-margin{
   margin: 50px;
 }
+#list{
+  display: flex;
+  flex-direction: column;
+
+}
+
 footer {
   width: 1028px;
-  height: 50px;
-  border: 1px solid lightgrey;
+  height: 100px;
+  
   text-align: center;
+  font-size: 10px;
 }
 
 
