@@ -1,6 +1,9 @@
 import { useState } from "react";
+import {useNavigate} from 'react-router-dom'
+
 
 function Add(props) {
+  let navigate =  useNavigate()
   const [newForm, setNewForm] = useState({
     topic: "",
     icon: "",
@@ -34,9 +37,10 @@ function Add(props) {
       titleThree: "",
       urlThree: "",
     });
+    navigate("/lessisgreener")
   };
   return (
-    <section>
+    <section className= "content-margin">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -100,7 +104,7 @@ function Add(props) {
           name="urlThree"
           placeholder="url"
           onChange={handleChange}
-        />
+        /><br/>
         <input type="submit" value="Add Topic" />
       </form>
     </section>

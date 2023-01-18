@@ -1,6 +1,8 @@
 import {useParams, useNavigate} from 'react-router-dom'
 import {useState} from 'react'
 
+
+
 function Edit(props) {
     const {id} = useParams(); 
     const topic = props.topics.find((topic)=>topic._id === id)
@@ -18,79 +20,113 @@ function Edit(props) {
     const handleSubmit = (event) => {
         event.preventDefault()
         props.updateTopics(editForm, topic._id)
-        console.log("button clicked")
-        navigate("/")
+        console.log(editForm)
+        navigate("/lessisgreener")
     }
-    return (
-        <section>
+
+    const removeTopic = () => {
+        props.deleteTopics(topic._id)
+        navigate("/lessisgreener")
+    }
+    return(
+        <section className="content-layout">
+            
           <form onSubmit={handleSubmit}>
-            <input
+            <div>
+              Topic:<input
               type="text"
               value={editForm.topic}
               name="topic"
               placeholder="topic"
               onChange={handleChange}
             />
-            <input
+            </div>
+            <div>
+              Icon:<input
               type="text"
               value={editForm.icon}
               name="icon"
               placeholder="icon"
               onChange={handleChange}
-            />
-            <input
+            /> 
+            </div>
+            
+            <div>
+              Image:<input
               type="text"
               value={editForm.image}
               name="image"
               placeholder="image"
               onChange={handleChange}
-            />
-            <input
+            />  
+            </div>
+            
+            <div>
+              Title 1:<input
               type="text"
               value={editForm.titleOne}
               name="titleOne"
               placeholder="title"
               onChange={handleChange}
             />
-            <input
+            </div>
+            
+            <div>
+              URL 1: <input
               type="text"
               value={editForm.urlOne}
               name="urlOne"
               placeholder="url"
               onChange={handleChange}
-            />
-            <input
+            /> 
+            </div>
+            
+            <div>
+              Title 2:<input
               type="text"
               value={editForm.titleTwo}
               name="titleTwo"
               placeholder="title"
               onChange={handleChange}
-            />
-            <input
+            /> 
+            </div>
+           
+            <div>
+              URL 2:<input
               type="text"
               value={editForm.urlTwo}
               name="urlTwo"
               placeholder="url"
               onChange={handleChange}
             />
-            <input
+            </div>
+      
+            <div>
+              Title 3:<input
               type="text"
               value={editForm.titleThree}
               name="titleThree"
               placeholder="title"
               onChange={handleChange}
-            />
-            <input
+            /> 
+            </div>
+            
+            <div>
+              URL 3:<input
               type="text"
               value={editForm.urlThree}
               name="urlThree"
               placeholder="url"
               onChange={handleChange}
-            />
-            <input type="submit" value="Update" />
+            /> 
+            </div>
+            
+            <div><input type="submit" value="Update"/></div><br/>
+            <button onClick = {()=>removeTopic(topic._id)}>Delete</button>
+
           </form>
         </section>
-      );
+      )
   }
   
   export default Edit;

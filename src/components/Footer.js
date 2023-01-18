@@ -1,7 +1,7 @@
 function Footer(props) {
     return (
         <footer>
-            <p>footer</p>
+            <p> ©2023 LessIsGreener</p>
         </footer>
         )
   }

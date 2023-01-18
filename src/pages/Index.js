@@ -5,11 +5,17 @@ function Index(props) {
   const loaded =()=>{
 
     return props.topics.map((topic) =>(
-      <div className="topics" key = {topic._id}>
+      <div  key = {topic._id}>
         <Link to={`/lessisgreener/${topic._id}`}>
-          <h2>{topic.topic}</h2>
+          <div className="topics">
+            <div id="icon">
+                <img  src={topic.icon} alt="icon"/>
+            </div>   
+            <p>{topic.topic}</p>
+          </div>
+          
         </Link>
-           <img src={topic.icon} alt="icon"/>
+           
       </div>
     ))
  
@@ -18,8 +24,15 @@ function Index(props) {
     return <h1>Loading...</h1>
   }
   return(
-  <div>
-    {props.topics ? loaded() : loading()}
+  <div className="content-margin">
+    <div id="content-title">
+        <h3>What are you here for? </h3>
+        <p>Click here to have ideas and get inspired</p>
+    </div>
+    <div className="index-container">
+        {props.topics ? loaded() : loading()}
+    </div>
+    
   </div>
   )
   }

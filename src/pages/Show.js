@@ -6,22 +6,21 @@ function Show(props) {
 
   const { id } = useParams()
   const topic = props.topics.find((topic) => topic._id === id)
+  console.log(props.topics)
 
-  console.log(topic.urlOne)
+//   console.log(topic.urlOne)
   return (
-    <div className="topics">
-      <h1>{topic.topic}</h1>
-      <img src={topic.image} alt={topic.topic} />
-      <Link to={`/topics/${topic.urlOne}`}>
-      <h2>{topic.titleOne}</h2>
-    </Link>
-    <Link to={`/topics/${topic.urlTwo}`}>
-      <h2>{topic.titleTwo}</h2>
-      </Link>
-      <Link to={`/topics/${topic.urlThree}`}>
-      <h2>{topic.titleThree}</h2>
-    
-      </Link>
+    <div className="content-margin">
+      <h2>{topic.topic}</h2>
+      <img id = "image" src={topic.image} alt={topic.topic} /><br/>
+      <div id="list">
+        <a href = {topic.urlOne} target = "_blank" rel="noreferrer">{topic.titleOne}</a><br/>
+        <a href = {topic.urlTwo} target = "_blank" rel="noreferrer">{topic.titleTwo}</a><br/>
+        <a href = {topic.urlThree} target = "_blank" rel="noreferrer">{topic.titleThree}</a><br/>
+      </div>
+      
+     
+      <Link to={`/lessisgreener/${topic._id}/edit`}>edit</Link>
 
     </div>
   )

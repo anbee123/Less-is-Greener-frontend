@@ -1,29 +1,101 @@
+*{
+  background-color: #fefff8;
+  box-sizing: border-box;
+}
+
+
+
 .App {
+ background-color: #f4f6e9;
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
 header {
+  background-color:#217461;
   width: 1028px;
   height: 150px;
-  border: 1px solid lightgrey;
   text-align: center;
+  
+}
+
+nav, nav>a, nav>a:link, nav>a:visited{
+  background-color:#217461;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  color: white;
+ 
+  
 }
 
 main {
-
   width: 1028px;
-  height: 800px;
-  border: 1px solid lightgrey;
+  height: 1000px;
+  background-color: #fefff8;
   text-align: center;
+}
+
+div > input[type=text], form > input[type=text]{
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  border: 1px solid #217461;
+  border-radius: 5px;
+
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: rgb(48, 61, 48);
+}
+.index-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 80px;
+}
+.topics, .topics > p{
+  border: 5px solid #e7eed6;
+  width: 180px; 
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: #e7eed6;
+}
+#icon{
+  width: 170px;
+  height: 170px;
+  background-color: white;
+}
+#icon>img{
+  width: 140px;
+}
+#image{
+  margin: 30px;
+}
+#logo{
+  width: 300px;
+  margin: 10px;
+}
+.content-margin{
+  margin: 50px;
+}
+#list{
+  display: flex;
+  flex-direction: column;
+
 }
 
 footer {
   width: 1028px;
-  height: 50px;
-  border: 1px solid lightgrey;
+  height: 100px;
+  
   text-align: center;
+  font-size: 10px;
 }
 
 
