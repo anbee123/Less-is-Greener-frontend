@@ -5,6 +5,7 @@ import Show from "../pages/Show"
 import Add from "../pages/Add"
 import Edit from "../pages/Edit"
 import Home from "../pages/Home"
+import Resources from "../pages/Resources"
 
 
 
@@ -80,6 +81,10 @@ function Main(props) {
                 <Route
                     path="/lessisgreener/:id/edit" 
                     element = {<Edit topics = {topics} updateTopics = {updateTopics} deleteTopics = {deleteTopics}/>}/>    
+        
+            <Route
+                    path="/lessisgreener/resources" 
+                    element = {<Resources/>}/>    
             </Routes>
 
 
