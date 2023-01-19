@@ -34,6 +34,7 @@ function Edit(props) {
           <form onSubmit={handleSubmit}>
             <div>
               Topic:<input
+              className="input"
               type="text"
               value={editForm.topic}
               name="topic"
@@ -43,6 +44,7 @@ function Edit(props) {
             </div>
             <div>
               Icon:<input
+              className="input"
               type="text"
               value={editForm.icon}
               name="icon"
@@ -53,6 +55,7 @@ function Edit(props) {
             
             <div>
               Image:<input
+              className="input"
               type="text"
               value={editForm.image}
               name="image"
@@ -63,6 +66,7 @@ function Edit(props) {
             
             <div>
               Title 1:<input
+              className="input"
               type="text"
               value={editForm.titleOne}
               name="titleOne"
@@ -73,6 +77,7 @@ function Edit(props) {
             
             <div>
               URL 1: <input
+              className="input"
               type="text"
               value={editForm.urlOne}
               name="urlOne"
@@ -83,6 +88,7 @@ function Edit(props) {
             
             <div>
               Title 2:<input
+              className="input"
               type="text"
               value={editForm.titleTwo}
               name="titleTwo"
@@ -93,6 +99,7 @@ function Edit(props) {
            
             <div>
               URL 2:<input
+              className="input"
               type="text"
               value={editForm.urlTwo}
               name="urlTwo"
@@ -103,6 +110,7 @@ function Edit(props) {
       
             <div>
               Title 3:<input
+              className="input"
               type="text"
               value={editForm.titleThree}
               name="titleThree"
@@ -113,6 +121,7 @@ function Edit(props) {
             
             <div>
               URL 3:<input
+              className="input"
               type="text"
               value={editForm.urlThree}
               name="urlThree"
@@ -121,8 +130,8 @@ function Edit(props) {
             /> 
             </div>
             
-            <div><input type="submit" value="Update"/></div><br/>
-            <button onClick = {()=>removeTopic(topic._id)}>Delete</button>
+            <div><input className="input" type="submit" value="Update"/></div><br/>
+            <button className="input button" onClick = {()=>removeTopic(topic._id)}>Delete</button>
 
           </form>
         </section>

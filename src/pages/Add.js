@@ -43,6 +43,7 @@ function Add(props) {
     <section className= "content-margin">
       <form onSubmit={handleSubmit}>
         <input
+          className='input'
           type="text"
           value={newForm.topic}
           name="topic"
@@ -50,6 +51,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.icon}
           name="icon"
@@ -57,6 +59,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.image}
           name="image"
@@ -64,6 +67,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.titleOne}
           name="titleOne"
@@ -71,6 +75,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.urlOne}
           name="urlOne"
@@ -78,6 +83,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.titleTwo}
           name="titleTwo"
@@ -85,6 +91,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.urlTwo}
           name="urlTwo"
@@ -92,6 +99,7 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.titleThree}
           name="titleThree"
@@ -99,13 +107,14 @@ function Add(props) {
           onChange={handleChange}
         />
         <input
+          className='input'
           type="text"
           value={newForm.urlThree}
           name="urlThree"
           placeholder="url"
           onChange={handleChange}
         /><br/>
-        <input type="submit" value="Add Topic" />
+        <input id="button-margin" className='input button' type="submit" value="Add" />
       </form>
     </section>
   );
