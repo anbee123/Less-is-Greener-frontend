@@ -4,6 +4,7 @@ import Index from "../pages/Index"
 import Show from "../pages/Show"
 import Add from "../pages/Add"
 import Edit from "../pages/Edit"
+import Home from "../pages/Home"
 
 
 
@@ -62,7 +63,10 @@ function Main(props) {
     return (
         <main>
             <Routes>
-                
+                <Route
+                    exact path ="/"
+                    element={<Home/>}
+                />
                 <Route 
                     exact path="/lessisgreener" 
                     element={<Index topics = {topics} />} />
