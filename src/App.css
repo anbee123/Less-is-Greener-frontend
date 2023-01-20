@@ -137,6 +137,75 @@ footer {
   width: 400px;
 }
 
+/*home animation*/
+.grid-container {
+  width:500px;
+  margin:50px 0 0 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color:white;
+}
+
+.grid-container > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.div1{
+  animation: fade 3s ease;
+}
+.div2{
+  animation: fade 8s ease;
+  
+}
+.div3{
+  animation: fade 13s ease;
+}
+.div4{
+  animation: fade 5s ease ;
+}
+.div5 {
+  animation: fade 8s ease ;
+  grid-column: 1 / span 3;
+}
+.div6{
+  animation: blinker 1s infinite ;
+}
+.div7{
+  animation: fade 13s ease ;
+}
+.div8{
+  animation: fade 5s ease ;
+}
+.div9{
+  animation: fade 8s ease ;
+}
+.div10{
+  animation: fade 15s ease ;
+}
+
+  
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade{
+
+     0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@keyframes autoplay1 {
+  0% {visibility: visible}
+  33.33% {visibility: hidden}
+}
+
+
+
 @media screen and (max-width: 600px) {
     html,body{
     overflow-x: hidden;
