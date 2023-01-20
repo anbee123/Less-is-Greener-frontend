@@ -13,10 +13,10 @@ LessIsGreener is a app to provide a user environmental, sustainability, and eco-
 
 ## Repo
 
-#### Backend: [https://github.com/Jibelais/react-portfolio-backend](https://github.com/Jibelais/react-portfolio-backend)
-#### Frontend: [https://github.com/Jibelais/react-portfolio-frontend](https://github.com/Jibelais/react-portfolio-frontend)
+#### Backend: [https://github.com/anbee123/Less-is-Greener-backend](https://github.com/anbee123/Less-is-Greener-backend)
+#### Frontend: [https://github.com/anbee123/Less-is-Greener-frontend](https://github.com/anbee123/Less-is-Greener-frontend)
 
-## Live link
+
 
 ## Frontend Diagram
 ![](public/img/diagram.png)
@@ -31,6 +31,8 @@ LessIsGreener is a app to provide a user environmental, sustainability, and eco-
 ![](public/img/show-screen.png)
 
 ![](public/img/responsive.png)
+
+## Live link
 
 
 
