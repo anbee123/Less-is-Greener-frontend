@@ -130,8 +130,8 @@ function Edit(props) {
             /> 
             </div>
             
-            <div><input className="input" type="submit" value="Update"/></div><br/>
-            <button className="input button" onClick = {()=>removeTopic(topic._id)}>Delete</button>
+            <div><input id = "update-button"className="input" type="submit" value="Update"/></div>
+            <button id="delete-button" className="input button" onClick = {()=>removeTopic(topic._id)}>Delete</button>
 
           </form>
         </section>
