@@ -43,6 +43,8 @@ LessIsGreener is a app to provide a user environmental, sustainability, and eco-
 
 ## Live link
 
+[https://app.netlify.com/sites/less-is-greener/overview](https://app.netlify.com/sites/less-is-greener/overview)
+
 ## Future Enhancement 
 
 * Include admin features with ability to log in and out
