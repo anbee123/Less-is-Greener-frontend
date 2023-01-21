@@ -32,7 +32,22 @@ LessIsGreener is a app to provide a user environmental, sustainability, and eco-
 
 ![](public/img/responsive.png)
 
+### Technologies Used
+
+* Express
+* React
+* MongoDB/Mongoose
+* Node
+* Full CRUD
+
+
 ## Live link
+
+## Future Enhancement 
+
+* Include admin features with ability to log in and out
+* Add search functionality to find item/topic 
+* Add sort button to sort items in alphabetical order
 
 
 
