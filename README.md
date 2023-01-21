@@ -16,6 +16,8 @@ LessIsGreener is a app to provide a user environmental, sustainability, and eco-
 #### Backend: [https://github.com/anbee123/Less-is-Greener-backend](https://github.com/anbee123/Less-is-Greener-backend)
 #### Frontend: [https://github.com/anbee123/Less-is-Greener-frontend](https://github.com/anbee123/Less-is-Greener-frontend)
 
+## Trello
+![](public/img/trello.png)
 
 
 ## Frontend Diagram
