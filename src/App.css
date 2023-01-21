@@ -39,7 +39,7 @@ main {
 }
 
 ul{
-  list-style: none;
+  list-style-type: square;
 }
 .input{
   padding: 10px;
@@ -119,14 +119,20 @@ a:link, a:visited{
   animation: blinker 2s infinite;
   font-weight: 600;
 }
+#resource-container{
+  display: flex;
+  width: 900px;
+  margin-left:50px;
 
-#resource-list{
+}
+.resource-list{
   font-size: 15px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  width:500px;
+  width:400px;
   margin-left: 50px;
+
 }
 
 #intro{
@@ -348,16 +354,27 @@ iframe{
       padding: 30px 30px 0px 30px;
     }
     #list{
-
-      width:400px;
+      width:370px;
+      margin-left:5px;
     }
+
+    #resource-container{
+      width:400px;
+      flex-direction: column;
+      margin-left:0px;
+    }
+    .resource-list{
+      margin-left:25px;
+      width: 350px;
+    }
+
     
    #add-button{
     margin-left:15px;
     width:300px;
    }
    #edit-button{
-    margin-left:35px;
+    margin-left:0px;
     width:300px;
    }
    #update-button{
