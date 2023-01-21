@@ -12,7 +12,7 @@ import Resources from "../pages/Resources"
 
 function Main(props) {
 
-    const URL = "http://localhost:4001/lessisgreener/"
+    const URL = "https://less-is-green.herokuapp.com/lessisgreener"
     
     const [topics, setTopics] = useState([])
 
