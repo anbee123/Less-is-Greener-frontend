@@ -26,8 +26,8 @@ function Index(props) {
   return(
   <div className="content-margin">
     <div id="content-title">
-        <h3>What are you here for? </h3>
-        <p>Click here to have ideas and get inspired</p>
+        <h3 className="title">What are you here for? </h3>
+        <p>Click any items to have ideas and get inspired</p>
     </div>
     <div className="index-container">
         {props.topics ? loaded() : loading()}

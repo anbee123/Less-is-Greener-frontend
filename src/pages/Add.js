@@ -114,7 +114,7 @@ function Add(props) {
           placeholder="url"
           onChange={handleChange}
         /><br/>
-        <input id="button-margin" className='input button' type="submit" value="Add" />
+        <input id="add-button" className='input button' type="submit" value="Add" />
       </form>
     </section>
   );
